@@ -1,4 +1,5 @@
-# Introduction to Web Design
+# Interactive Design
+## Introduction to Front-End Web Design & Development
 
 ## Calendar
 
