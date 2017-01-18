@@ -47,7 +47,7 @@
 
 Choose a recipe, markup and style the content.
 
-*Extra credit (optional)* — Bake, cook, or prepare your recipe and photograph for later use.
+*Extra credit (optional)* — Bake, cook, or prepare your recipe and photograph the process and/or final result for later use.
 
 #### Focus
 
