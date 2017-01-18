@@ -27,6 +27,7 @@
 - 3 projects, 4 weeks for each project
 - Every Wednesday, in class; with lecture, demonstration, and work time
 - Office hours, 1 hour before class (email or Slack to schedule a 1:1) and throughout the week via Slack
+- [Slack team: id-sp17-ec](https://id-sp17-ec.slack.com/)
 
 ## Projects
 
