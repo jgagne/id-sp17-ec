@@ -1,0 +1,223 @@
+/* --- Resources (& Readings) --- */
+
+/*
+
+CSS seletors:
+http://www.quirksmode.org/css/selectors/
+
+Naming CSS Stuff is Really Hard:
+https://seesparkbox.com/foundry/naming_css_stuff_is_really_hard
+
+CSS box model properties/values:
+https://www.sitepoint.com/web-foundations/box-properties/
+
+CSS list properties/values:
+http://reference.sitepoint.com/css/listproperties
+
+CSS typographical properties/values:
+http://reference.sitepoint.com/css/typography
+
+web safe colors:
+http://websafecolors.info/color-chart
+
+CSS color and background properties:
+http://reference.sitepoint.com/css/colorsbackgrounds
+
+web safe fonts:
+http://www.cssfontstack.com
+
+Typographic characters:
+https://www.typewolf.com/cheatsheet
+http://htmlarrows.com/arrows/up-dashed-arrow/
+
+CSS reset:
+http://meyerweb.com/eric/thoughts/2011/01/26/reset-v2-0/
+http://html5doctor.com/html-5-reset-stylesheet/
+
+The i, b, em, & strong elements
+http://html5doctor.com/i-b-em-strong-element/
+
+More HTML5 Doctor articles:
+http://html5doctor.com/article-archive/
+
+*/
+
+
+
+/* --- resets (adjust default styles) --- */
+
+/* remove default margin */
+
+body,
+dd,
+dl,
+figure {
+  margin: 0;
+  }
+
+/* --- flexible images --- */
+
+img {
+  max-width: 100%;
+  height: auto;
+  }
+
+/* --- body / first section --- */
+
+/* max-width and centered (horizontally) */
+
+body {
+  max-width: 60em;
+  color: #303; /* dark purple, to compliment green and orange palette, and the black corn tortilla chips in product photo */
+  background: #eee;
+  padding: 0 1em;
+  margin: auto;
+  }
+
+/* links */
+
+a {
+  color: #f90;
+  }
+
+/* class selector (functional and presentational) */
+
+/* negative value, offset padding right/left value from body */
+
+.full-width {
+  margin-right: -1em;
+  margin-left: -1em;
+  }
+
+/* --- header --- */
+
+/* selector, element selector, or type selector */
+
+header {
+  background: #cf9;
+  padding: 1.5em 1em;
+}
+
+/* descendant selector */
+
+header h1 {
+  font: bold 3em "Trebuchet MS", sans-serif;
+  margin-top: 0;
+  margin-bottom: .5em;
+  }
+
+header dl {
+  display: inline-block; /* change box model display: display in a line (as text, left to right), but retain block properties (width/height) */
+  font: .96em "Trebuchet MS", sans-serif;
+  vertical-align: top;
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+  border-left: 1px solid #fff;
+  margin-right: 1.5em;
+  margin-bottom: .5em;
+  }
+
+header dl dt {
+  margin: 1em 0 .5em;
+  }
+
+/* adjust (tighten) letter-spacing between "l" and "e" */
+
+.ltr-sp-minus-05em {
+  letter-spacing: -.05em;
+  }
+
+/* --- figure/img / product shot --- */
+
+/* id selector */
+
+#product {
+  background: #fff;
+  }
+
+#product img {
+  vertical-align: middle; /* remove descender spacing on image */
+  }
+
+#product figcaption {
+  padding: 1em 1em; /* offset right/left padding */
+  }
+
+#product figcaption small {
+  vertical-align: .2em;
+  }
+
+#product figcaption small {
+  font: 1em monospace;
+  }
+
+/* --- sections / ingredients/directions --- */
+
+section {
+  padding-top: 1.6em;
+  }
+
+section h2 {
+  font: bold 1.4em "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-top: 0;
+  margin-bottom: 1.1em;
+  }
+
+section ol,
+section ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  }
+
+section ol li,
+section ul li {
+  padding: 1em .5em;
+  border-top: 1px solid #ddd;
+  margin: 0 1.2em;
+  }
+
+#ingredients li {
+  list-style: circle;
+  font: normal 1em/1.45 Georgia, serif;
+  }
+
+/* descendant selectors, three seletors deep max, else rethink how to select */
+
+#directions ol {
+  list-style: decimal inside;
+  }
+
+#directions li {
+  font: bold 1em "Trebuchet MS", sans-serif;
+  margin: 0;
+  }
+
+#directions li p {
+  display: inline;
+  font: normal 1em/1.45 Georgia, serif;
+  margin: .5em 0;
+  }
+
+/* --- back to top / jump-link-top */
+
+.jump-link-top {
+  text-align: center;
+  margin: 1.2em 0;
+  }
+
+.jump-link-top a {
+  font: 1em monospace;
+  text-decoration: none;
+  }
+
+.jump-link-top .arrow-up {
+  font: bold 1.2em "Trebuchet MS", sans-serif;
+  vertical-align: middle;
+  margin-right: .2em;
+  }
+
+.jump-link-text {
+  text-decoration: underline;
+  }
