@@ -45,7 +45,14 @@ https://coderwall.com/p/5m0srg/beware-of-inline-block
 
 */
 
+/* --- display HTML5 elements as block --- */
 
+figcaption,
+figure,
+header,
+section {
+  display: block;
+  }
 
 /* --- resets (adjust default styles) --- */
 
@@ -131,9 +138,6 @@ header dl dt {
   }
 
 /* --- navigation --- */
-
-nav {
-  }
 
 nav ul {
   list-style: none;
