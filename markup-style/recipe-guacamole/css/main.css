@@ -106,7 +106,7 @@ header {
 header h1 {
   font: bold 3.5em "Trebuchet MS", sans-serif;
   margin-top: 0;
-  margin-bottom: .5em;
+  margin-bottom: .4em;
   }
 
 header dl {
@@ -117,7 +117,6 @@ header dl {
   padding-left: 1.2em;
   border-left: 1px solid #fff;
   margin-right: 1.5em;
-  margin-bottom: .5em;
   margin-left: .4em;
   }
 
@@ -147,7 +146,7 @@ nav li {
   }
 
 nav li:first-child {
-  margin-right: 2.1em;
+  margin-right: 1.7em;
   }
 
 nav a {
