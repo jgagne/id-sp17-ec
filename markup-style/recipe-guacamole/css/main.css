@@ -204,13 +204,13 @@ section ul li {
 
 .jump-link-top {
   text-align: center;
-  margin: 1.2em 0;
   }
 
 .jump-link-top a {
   display: block;
   font: 1em monospace;
   text-decoration: none;
+  padding: 1.2em;
   }
 
 .jump-link-top .arrow-up {
