@@ -95,7 +95,7 @@ a {
 
 header {
   background: #9c6;
-  padding: 1.5em 1em;
+  padding: 1.5em 1em 0;
 }
 
 /* descendant selector */
@@ -111,10 +111,10 @@ header dl {
   font: .96em "Trebuchet MS", sans-serif;
   vertical-align: top;
   padding-bottom: 1em;
-  padding-left: 1.5em;
+  padding-left: 1.2em;
   border-left: 1px solid #fff;
   margin-right: 1.5em;
-  margin-bottom: .5em;
+  margin-bottom: 1.5em;
   }
 
 header dl dt {
@@ -154,6 +154,7 @@ header dl dt {
 /* --- sections / ingredients/directions --- */
 
 section {
+  clear: left;
   padding-top: 1.6em;
   }
 
