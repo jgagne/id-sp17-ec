@@ -40,6 +40,9 @@ http://html5doctor.com/i-b-em-strong-element/
 More HTML5 Doctor articles:
 http://html5doctor.com/article-archive/
 
+Beware of "inline-block" (The Web Behind)
+https://coderwall.com/p/5m0srg/beware-of-inline-block
+
 */
 
 
@@ -114,7 +117,7 @@ header dl {
   padding-left: 1.2em;
   border-left: 1px solid #fff;
   margin-right: 1.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: .5em;
   margin-left: .4em;
   }
 
@@ -126,6 +129,32 @@ header dl dt {
 
 .ltr-sp-minus-05em {
   letter-spacing: -.05em;
+  }
+
+/* --- navigation --- */
+
+nav {
+  }
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: .3em;
+  }
+
+nav li {
+  display: inline;
+  }
+
+nav li:first-child {
+  margin-right: 2.3em;
+  }
+
+nav a {
+  display: inine-block;
+  font: .96em "Trebuchet MS", sans-serif;
+  color: #fff;
+  padding: .5em;
   }
 
 /* --- figure/img / product shot --- */
