@@ -216,18 +216,17 @@ section ul {
 
 section li {
   padding: 1em .5em;
-  border-top: 1px solid #ccf;
+  border-top: 1px solid #ddd;
   margin: 0 1.2em;
   }
 
 #ingredients ul {
   list-style: circle;
-  margin-left: 1.65em;
+  margin-left: 1.2em;
   }
 
 #ingredients li {
   font: normal 1.02em/1.45 Georgia, serif;
-  text-indent: -.35em;
   margin: 0;
   }
 
