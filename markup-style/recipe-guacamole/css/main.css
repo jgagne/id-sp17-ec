@@ -214,16 +214,20 @@ section ul {
   margin-bottom: 0;
   }
 
-section ol li,
-section ul li {
+section li {
   padding: 1em .5em;
   border-top: 1px solid #ddd;
   margin: 0 1.2em;
   }
 
-#ingredients li {
+#ingredients ul {
   list-style: circle;
+  margin-left: 1.65em;
+  }
+
+#ingredients li {
   font: normal 1.04em/1.45 Georgia, serif;
+  margin: 0;
   }
 
 /* descendant selectors, three seletors deep max, else rethink how to select */
