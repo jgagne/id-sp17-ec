@@ -87,7 +87,7 @@ body {
 /* links */
 
 a {
-  color: #f90;
+  color: #f63;
   }
 
 /* class selector (functional and presentational) */
@@ -119,10 +119,11 @@ header h1 {
 header dl {
   display: inline-block; /* change box model display: display in a line (as text, left to right), but retain block properties (width/height) */
   font: .96em "Trebuchet MS", sans-serif;
+  letter-spacing: .01em;
   vertical-align: top;
   padding-bottom: 1em;
   padding-left: 1.2em;
-  border-left: 1px solid #fff;
+  border-left: 1px solid #cf9;
   margin-right: 1.5em;
   margin-left: .4em;
   }
@@ -150,15 +151,23 @@ nav li {
   }
 
 nav li:first-child {
-  margin-right: 1.7em;
+  margin-right: 1.4em;
   }
 
 nav a {
   display: inline-block;
-  font: 1em "Trebuchet MS", sans-serif;
+  font: 1.04em "Trebuchet MS", sans-serif;
   color: #fff;
+  text-decoration: none;
   padding: .5em;
   }
+
+nav a b {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -3px;
+  }
+
 
 /* --- figure/img / product shot --- */
 
@@ -177,11 +186,11 @@ nav a {
   }
 
 #product figcaption small {
-  vertical-align: .2em;
+  vertical-align: .1em;
   }
 
 #product figcaption small {
-  font: 1em monospace;
+  font: 1.1em monospace;
   }
 
 /* --- sections / ingredients/directions --- */
@@ -214,7 +223,7 @@ section ul li {
 
 #ingredients li {
   list-style: circle;
-  font: normal 1em/1.45 Georgia, serif;
+  font: normal 1.04em/1.45 Georgia, serif;
   }
 
 /* descendant selectors, three seletors deep max, else rethink how to select */
@@ -230,7 +239,7 @@ section ul li {
 
 #directions li p {
   display: inline;
-  font: normal 1em/1.45 Georgia, serif;
+  font: normal 1.04em/1.45 Georgia, serif;
   margin: .5em 0;
   }
 
@@ -242,7 +251,7 @@ section ul li {
 
 .jump-link-top a {
   display: block;
-  font: 1em monospace;
+  font: 1.1em monospace;
   text-decoration: none;
   padding: 1.2em;
   }
