@@ -121,7 +121,8 @@ header dl {
   font: .96em "Trebuchet MS", sans-serif;
   letter-spacing: .01em;
   vertical-align: top;
-  padding-bottom: 1em;
+  padding-top: .8em;
+  padding-bottom: .8em;
   padding-left: 1.2em;
   border-left: 1px solid #693;
   margin-right: 1.5em;
@@ -130,6 +131,10 @@ header dl {
 
 header dl dt {
   margin: 1em 0 .5em;
+  }
+
+header dl dt:first-child {
+  margin-top: 0;
   }
 
 /* adjust (tighten) letter-spacing between "l" and "e" */
