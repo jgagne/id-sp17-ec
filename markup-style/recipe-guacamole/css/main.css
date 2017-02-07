@@ -230,10 +230,6 @@ section li {
   margin: 0;
   }
 
-#ingredients li em {
-  font-size: .94em;
-  }
-
 /* descendant selectors, three seletors deep max, else rethink how to select */
 
 #directions ol {
