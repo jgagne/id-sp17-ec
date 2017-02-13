@@ -43,11 +43,34 @@ http://html5doctor.com/article-archive/
 Beware of "inline-block" (The Web Behind)
 https://coderwall.com/p/5m0srg/beware-of-inline-block
 
-Microdata
+Microdata (Extra semantics specific content)
 https://developers.google.com/schemas/formats/microdata
 
-Structured data testing tool:
+For example:
+
+HTML without Microdata
+
+<dl>
+  <dt><b>Total Time:</b></dt>
+  <dd><time datetime="1h 20m">1 hr 20 min</time></dd>
+  <dt><b>Prep:</b></dt>
+  <dd><time datetime="20m">20 min</time></dd>
+</dl>
+
+HTML with Microdata
+
+<dl>
+  <dt><b>Total Time:</b></dt>
+  <dd><time datetime="1h 20m" itemprop="cookTime" content="PT1H20M">1 hr 20 min</time></dd>
+  <dt><b>Prep:</b></dt>
+  <dd><time datetime="20m" itemprop="prepTime" content="PT20M">20 min</time></dd>
+</dl>
+
+Microdata, structured data, testing tool:
 https://search.google.com/structured-data/testing-tool
+
+HTML5 Outliner
+http://gsnedders.html5.org/outliner/
 
 */
 
@@ -161,6 +184,8 @@ nav li {
   display: inline;
   }
 
+/* pseudo-class / :first-child / select only the first child (li) within the parent (ul) */
+
 nav li:first-child {
   margin-right: 1.8em;
   }
@@ -258,7 +283,7 @@ section li {
   margin: .5em 0;
   }
 
-/* --- back to top / jump-link-top */
+/* --- back to top / jump-link-top --- */
 
 .jump-link-top {
   text-align: center;
