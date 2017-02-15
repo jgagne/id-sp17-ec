@@ -232,7 +232,6 @@ nav a b {
 /* --- sections / ingredients/directions --- */
 
 section {
-  clear: left;
   padding-top: 1.6em;
   }
 
@@ -305,3 +304,50 @@ section li {
 .jump-link-text {
   text-decoration: underline;
   }
+
+/* --- breakpoint(s) --- */
+
+/* max-width: 60em / wider screen layout */
+
+@media (min-width: 60em) {
+
+  header,
+  section {
+    float: left;
+    }
+
+  header {
+    width: 30%;
+    }
+
+  #ingredients {
+    width: 38%;
+    margin-left: 5%;
+    }
+
+  #directions {
+    width: 24%;
+    margin-left: 3%;
+    }
+
+  header dl {
+    margin-bottom: 1.5em;
+    }
+
+  nav,
+  .jump-link-top {
+    /*  hide only visually, but have it available for screen readers */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    /* clear floats */
+    clear: both;
+    }
+
+}
