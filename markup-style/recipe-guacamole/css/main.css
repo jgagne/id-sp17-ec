@@ -307,9 +307,33 @@ section li {
 
 /* --- breakpoint(s) --- */
 
+/* max-width: 24em / small to wide screen layout */
+
+@media (min-width: 24em) {
+
+  body {
+    background: #fff;
+    }
+
+  .recipe {
+    max-width: 19.9375em;
+    background: #eee;
+    padding: 0 1em 1em;
+    border: 1px solid #ddd;
+    border-radius: .25em;
+    margin: 5% auto;
+    overflow: hidden;
+    }
+
+}
+
 /* max-width: 60em / wider screen layout */
 
 @media (min-width: 60em) {
+
+  .recipe {
+    max-width: none;
+    }
 
   header,
   section {
