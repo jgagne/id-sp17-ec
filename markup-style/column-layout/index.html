@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+
+  html {
+    font: 100%/1.15 sans-serif;
+    }
+
+  body {
+    max-width: 60em;
+    padding: 0 1em; /* acts as left-to-right margins or gutters for a one-column layout */
+    margin: auto;
+    overflow-x: hidden; /* hide horizontal overflow (full-width/full-bleed) */
+    }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle; /* omit descender margin */
+    }
+
+  p {
+    font: .85em/1.5 Verdana, sans-serif;
+    }
+
+   /* --- full-width / full-bleed --- */
+
+  .full-width {
+    margin: 0 -1em; /* undo body left-to-right margins/gutters */;
+    }
+
+  /* image frame for bleed or crop */
+
+  .img-frame {
+    text-align: center; /* center image when max-width is met */
+    overflow: hidden; /* fallback, hide overflow */
+    overflow-x: visible;
+    overflow-y: visible;
+    }
+
+  /* full-bleed background-color */
+
+  .full-bleed {
+    background: #000;
+    padding: 0 100%;
+    margin: 0 -100%;
+    }
+
+  /* --- drop cap / float: left; --- */
+
+  /* :first-letter / pseudo-element selector / http://quirksmode.org/css/selectors/firstline.html */
+
+  .drop-cap:first-letter {
+    float: left; /* text wrap */
+    font-family: "Arial Black", sans-serif;
+    font-size: 400%; /* display type size */
+    line-height: .75; /* middle ground line-height between browsers */
+    color: #fff;
+    background: #000;
+    padding: .225em .25em .255em; /* tweak, eyeball, obsess, etc. */
+    border: 3px double #fff;
+    margin: .1em .225em 0 0; /* tweak, eyeball, obsess, etc. */
+    }
+
+  figure {
+    margin: 0;
+    }
+
+  figcaption {
+    padding: .625em 0 .75em;
+    border-bottom: 1px solid #000;
+    }
+
+  figcaption p {
+    font-size: .75em;
+    line-height: 1.45;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    }
+
+  .fpo  {
+    display: block;
+    width: 100%;
+    height: 0;
+    background: #ddd;
+    border: 1px solid #eee;
+    padding-bottom: 85%;
+    }
+
+  .text-wrap {
+    float: left;
+    max-width: 50%;
+    margin-right: .8em;
+    margin-bottom: .2em;
+    }
+
+  /* --- general --- */
+
+  .columns {
+    margin: 5% 0;
+    }
+
+  .columns ul {
+    list-style: none;
+    padding: 1em 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin: 1em 0;
+    }
+
+  @media (min-width: 48em) {
+
+  .text-wrap {
+    margin-top: 1.2em;
+    }
+
+  /* --- layout-display / display: inline-block; --- */
+
+  .layout-display ul {
+    text-align: center;
+    !background: #ddd;
+    }
+
+  .layout-display .col {
+    display: inline-block;
+    width: 30.333%;
+    text-align: left;
+    vertical-align: top; /* baseline shift, vertically align to top, not baseline */
+    background: #fff;
+    padding-left: 3%;
+    }
+
+  .layout-display .col:first-child {
+    padding-left: 0; /* remove left-hand padding */
+    }
+
+  /* --- layout-float / float: left; --- */
+
+  .layout-float ul {
+    !background: #ddd;
+    overflow: hidden; /* clear floats / http://quirksmode.org/css/clearing.html */
+    }
+
+  .layout-float .col {
+    float: left;
+    width: 31.333%;
+    background: #fff;
+    padding-left: 3%;
+    }
+
+  .layout-float .col:first-child {
+    padding-left: 0; /* remove left-hand padding */
+    }
+
+  }
+
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Column Layout (display & float)</title>
+  <meta name="author" content="Justin Gagne">
+</head>
+<body>
+
+<figure class="hero-banner">
+  <div class="full-width img-frame">
+    <img class="full-bleed" alt="Newspaper Bundles" src="img/bundle-1853667_640.jpg">
+  </div>
+  <figcaption><a href="https://pixabay.com/en/bundle-jute-rope-newspaper-1853667/"><small>Source</small></a></figcaption>
+</figure>
+
+<h1>Column Layout</h1>
+
+<section class="columns layout-display">
+  <h2><code>display: inline-block;</code></h2>
+  <ul>
+    <li class="col">
+      <p>
+      You are not your !@#$% work. To surpass others is !@#$% tough, if you only do as you are told you don’t have it in you to succeed. Design is all about !@#$% relationships—the relationship of form and content, the relationship of elements, the relationship of designer and user. Can we all just agree as the greater design community to stop !@#$% talking about Comic Sans altogether? It’s getting !@#$% old. Don’t worry about what other people !@#$% think.
+      </p>
+    </li>
+    <li class="col">
+      <p>
+      Dedicate yourself to lifelong !@#$% learning. When you design, you have to draw on your own !@#$% life experiences. If it’s not something you would want to read/look at/use then why !@#$% bother? You won’t get good at anything by doing it a lot !@#$% aimlessly. Paul Rand once said, “The public is more familiar with bad !@#$% design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.” You are not your !@#$% work. Dedicate yourself to lifelong !@#$% learning.
+      </p>
+    </li>
+    <li class="col">
+      <p>
+      Someday is not a !@#$% day of the week. The details are not the details. They make the !@#$% design. Paul Rand once said, “The public is more familiar with bad !@#$% design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.” Intuition is !@#$% important. To go partway is easy, but mastering anything requires hard !@#$% work.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<section class="columns layout-float">
+  <h2><code>float: left;</code></h2>
+  <ul>
+    <li class="col">
+      <p class="drop-cap">
+      <mark>A <i>drop cap</i> is a large capital letter at the beginning of a section of text, occupying more than the depth of one line.</mark> You are not your !@#$% work. To surpass others is !@#$% tough, if you only do as you are told you don’t have it in you to succeed. Design is all about !@#$% relationships—the relationship of form and content, the relationship of elements, the relationship of designer and user. Can we all just agree as the greater design community to stop !@#$% talking about Comic Sans altogether? It’s getting !@#$% old. Don’t worry about what other people !@#$% think.
+      </p>
+    </li>
+    <li class="col">
+      <figure class="text-wrap">
+        <img class="fpo" alt="FPO (For Position Only)" src="" width="160" height="96">
+        <figcaption><p><mark><i>Text wrap</i> (in word processing) allows text to surround embedded features such as pictures.</mark></p></figcaption>
+      </figure>
+      <p>
+      Dedicate yourself to lifelong !@#$% learning. When you design, you have to draw on your own !@#$% life experiences. If it’s not something you would want to read/look at/use then why !@#$% bother? You won’t get good at anything by doing it a lot !@#$% aimlessly. Paul Rand once said, “The public is more familiar with bad !@#$% design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.” You are not your !@#$% work. Dedicate yourself to lifelong !@#$% learning.
+      </p>
+    </li>
+    <li class="col">
+      <p>
+      Someday is not a !@#$% day of the week. The details are not the details. They make the !@#$% design. Paul Rand once said, “The public is more familiar with bad !@#$% design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.” Intuition is !@#$% important. To go partway is easy, but mastering anything requires hard !@#$% work.
+      </p>
+    </li>
+  </ul>
+</section>
+
+</body>
+</html>
